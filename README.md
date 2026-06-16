@@ -11,7 +11,7 @@
 ---
 
 ## Live Demo
-🚀 **[Launch FinSight App](#)** 
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://finsight-kwvxwf5vdsk4x55kyks6wf.streamlit.app/)
 
 ---
 
