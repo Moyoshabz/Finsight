@@ -1,4 +1,4 @@
-# Finsight
+# FinSight
 ### Automated Bank Transaction Categorization Using Fine-Tuned DistilBERT
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://python.org)
