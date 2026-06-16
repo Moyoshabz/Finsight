@@ -216,7 +216,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
-*.pkl
+finsight_model/
+models/
+rf_model.pkl
+lr_model.pkl
+tfidf_vectorizer.pkl
 finsight_model/model.safetensors
 models/finsight_model/model.safetensors
 rf_model.pkl

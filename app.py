@@ -1,3 +1,6 @@
+import os
+os.environ["TRANSFORMERS_OFFLINE"] = "1"
+os.environ["HF_DATASETS_OFFLINE"] = "1"
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -15,22 +18,17 @@ st.set_page_config(
 )
 
 from pathlib import Path
+import os
+os.environ["TRANSFORMERS_OFFLINE"] = "0"
 
 BASE_DIR = Path(__file__).parent
-MODEL_PATH = str(BASE_DIR / "finsight_model")
+MODEL_PATH = "Moyoshabz/finsight-transaction-classifier"
 ENCODER_PATH = str(BASE_DIR / "label_encoder.pkl")
 SAMPLE_PATH = str(BASE_DIR / "sample_monthly_statement.csv")
-
 @st.cache_resource
 def load_model():
-    tokenizer = DistilBertTokenizer.from_pretrained(
-        MODEL_PATH,
-        local_files_only=True
-    )
-    model = DistilBertForSequenceClassification.from_pretrained(
-        MODEL_PATH,
-        local_files_only=True
-    )
+    tokenizer = DistilBertTokenizer.from_pretrained(MODEL_PATH)
+    model = DistilBertForSequenceClassification.from_pretrained(MODEL_PATH)
     model.eval()
     with open(ENCODER_PATH, "rb") as f:
         le = pickle.load(f)
