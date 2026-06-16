@@ -21,6 +21,7 @@ Upload a CSV of bank transactions and FinSight will:
 - Generate a spending breakdown with percentages
 - Calculate a Financial Health Score based on the 50/30/20 rule
 - Flag unusual transactions as anomalies
+- Generates Spending Dashboard
 
 **Categories:** Food & Dining · Transport · Shopping · Entertainment · Healthcare · Utilities · Financial Services
 
@@ -37,3 +38,15 @@ Upload a CSV of bank transactions and FinSight will:
 ---
 
 ## Architecture
+
+## Dataset
+- **Primary**: Wells Fargo Campus Analytics Challenge (40,000 real transactions)
+- **Supplementary**: Hand-curated synthetic US merchant dataset (Food & Dining)
+- **Final balanced training set**: 12,752 transactions across 7 categories
+
+---
+
+## References
+- Devlin et al. (2019) — BERT: Pre-training of Deep Bidirectional Transformers
+- Sanh et al. (2019) — DistilBERT: Smaller, Faster, Cheaper
+- Sun et al. (2019) — How to Fine-Tune BERT for Text Classification
