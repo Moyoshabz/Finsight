@@ -25,16 +25,26 @@ BASE_DIR = Path(__file__).parent
 MODEL_PATH = "Moyoshabz/finsight-transaction-classifier"
 ENCODER_PATH = str(BASE_DIR / "label_encoder.pkl")
 SAMPLE_PATH = str(BASE_DIR / "sample_monthly_statement.csv")
+
 @st.cache_resource
 def load_model():
-    tokenizer = DistilBertTokenizer.from_pretrained(MODEL_PATH)
-    model = DistilBertForSequenceClassification.from_pretrained(MODEL_PATH)
-    model.eval()
-    with open(ENCODER_PATH, "rb") as f:
-        le = pickle.load(f)
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    model = model.to(device)
-    return model, tokenizer, le, device
+    try:
+        tokenizer = DistilBertTokenizer.from_pretrained(
+            "Moyoshabz/finsight-transaction-classifier",
+            use_fast=True
+        )
+        model = DistilBertForSequenceClassification.from_pretrained(
+            "Moyoshabz/finsight-transaction-classifier"
+        )
+        model.eval()
+        with open(ENCODER_PATH, "rb") as f:
+            le = pickle.load(f)
+        device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        model = model.to(device)
+        return model, tokenizer, le, device
+    except Exception as e:
+        st.error(f"Model loading failed: {str(e)}")
+        raise e
 
 CORRECTION_RULES = {
     "NETFLIX": "Entertainment", "SPOTIFY": "Entertainment",

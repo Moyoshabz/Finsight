@@ -1,9 +1,7 @@
 streamlit
 torch
-transformers
+transformers==5.10.2
 pandas
 numpy
 matplotlib
 scikit-learn
-sentencepiece
-protobuf
