@@ -1,0 +1,26 @@
+transaction,amount,category,confidence,corrected
+MCDONALDS MIAMI FL,12.5,Food & Dining,99.0,False
+UBER EATS PAYMENT,34.99,Food & Dining,99.3,False
+STARBUCKS STORE,6.75,Food & Dining,99.4,False
+CHIPOTLE MEXICAN GRILL,11.25,Food & Dining,99.3,False
+DOORDASH DASHPASS,45.0,Food & Dining,99.2,False
+WHOLE FOODS MARKET,87.43,Food & Dining,99.3,False
+PANERA BREAD,9.5,Food & Dining,99.4,False
+UBER TRIP DOWNTOWN,18.75,Transport,47.2,True
+SHELL OIL GAS,55.0,Transport,86.4,False
+DELTA AIR LINES TICKET,320.0,Transport,47.6,False
+LYFT RIDE,22.5,Transport,74.9,True
+AMZN MKTP US,67.99,Shopping,82.8,True
+TARGET STORE,43.21,Shopping,49.1,True
+WALMART SUPERCENTER,112.54,Shopping,98.9,True
+NETFLIX MONTHLY SUB,15.99,Entertainment,77.6,True
+SPOTIFY MONTHLY,9.99,Entertainment,90.8,True
+AMC THEATERS,24.0,Entertainment,55.7,True
+CVS PHARMACY,28.5,Healthcare,58.1,True
+WALGREENS PHARMACY,15.0,Healthcare,61.4,True
+PLANET FITNESS,24.99,Healthcare,94.4,False
+COMCAST XFINITY BILL,89.99,Utilities,76.2,False
+ATT WIRELESS BILL,75.0,Utilities,86.9,False
+FPL ENERGY BILL,112.0,Utilities,36.6,True
+CHASE MORTGAGE PMT,1450.0,Financial Services,65.8,False
+CAPITAL ONE PAYMENT,250.0,Financial Services,44.2,False
