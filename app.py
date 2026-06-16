@@ -1,6 +1,4 @@
 import os
-os.environ["TRANSFORMERS_OFFLINE"] = "1"
-os.environ["HF_DATASETS_OFFLINE"] = "1"
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -19,7 +17,6 @@ st.set_page_config(
 
 from pathlib import Path
 import os
-os.environ["TRANSFORMERS_OFFLINE"] = "0"
 
 BASE_DIR = Path(__file__).parent
 MODEL_PATH = "Moyoshabz/finsight-transaction-classifier"
