@@ -42,16 +42,22 @@ Upload a CSV of bank transactions and FinSight will:
 
 Raw transaction string
         ↓
+        
 Text cleaning pipeline
         ↓
+        
 DistilBERT fine-tuned classifier
         ↓
+        
 Business rule correction layer
         ↓
+        
 Category + confidence score
         ↓
+        
 Analytics engine → health score + anomalies
         ↓
+        
 Streamlit dashboard
 
 ---
