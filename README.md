@@ -40,27 +40,24 @@ Upload a CSV of bank transactions and FinSight will:
 
 ## Architecture
 
-Raw transaction string
-        ↓
-        
-Text cleaning pipeline
-        ↓
-        
-DistilBERT fine-tuned classifier
-        ↓
-        
-Business rule correction layer
-        ↓
-        
-Category + confidence score
-        ↓
-        
-Analytics engine → health score + anomalies
-        ↓
-        
-Streamlit dashboard
+```mermaid
+flowchart TD
+    A[Raw Transaction String]
+    B[Text Cleaning Pipeline]
+    C[DistilBERT Fine-Tuned Classifier]
+    D[Business Rule Correction Layer]
+    E[Category + Confidence Score]
+    F[Analytics Engine<br/>Health Score + Anomalies]
+    G[Streamlit Dashboard]
 
----
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+```
+
 
 ## Dataset
 - **Primary**: Wells Fargo Campus Analytics Challenge (40,000 real transactions)
