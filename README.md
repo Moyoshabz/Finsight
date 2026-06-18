@@ -22,7 +22,7 @@ Upload a CSV of bank transactions and FinSight will:
 - Generate a spending breakdown with percentages
 - Calculate a Financial Health Score based on the 50/30/20 rule
 - Flag unusual transactions as anomalies
-- Generates Spending Dashboard
+- Visualize spending with an interactive dashboard
 
 **Categories:** Food & Dining · Transport · Shopping · Entertainment · Healthcare · Utilities · Financial Services
 
@@ -39,6 +39,22 @@ Upload a CSV of bank transactions and FinSight will:
 ---
 
 ## Architecture
+
+Raw transaction string
+        ↓
+Text cleaning pipeline
+        ↓
+DistilBERT fine-tuned classifier
+        ↓
+Business rule correction layer
+        ↓
+Category + confidence score
+        ↓
+Analytics engine → health score + anomalies
+        ↓
+Streamlit dashboard
+
+---
 
 ## Dataset
 - **Primary**: Wells Fargo Campus Analytics Challenge (40,000 real transactions)
