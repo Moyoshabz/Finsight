@@ -5,7 +5,6 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)](https://pytorch.org)
 [![Transformers](https://img.shields.io/badge/HuggingFace-Transformers-yellow.svg)](https://huggingface.co)
 
-![iamge_1](./image7.png)
 > FinSight transforms raw bank transaction strings like `AMZN MKTP US*2K4LP` 
 > into meaningful spending categories and financial insights.
 
@@ -14,6 +13,7 @@
 ## Live Demo
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://finsight-kwvxwf5vdsk4x55kyks6wf.streamlit.app/)
 
+![iamge_1](./image7.png)
 ---
 
 ## What it does
