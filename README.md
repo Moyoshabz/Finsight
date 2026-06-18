@@ -58,7 +58,6 @@ flowchart TD
     F --> G
 ```
 
-
 ## Dataset
 - **Primary**: Wells Fargo Campus Analytics Challenge (40,000 real transactions)
 - **Supplementary**: Hand-curated synthetic US merchant dataset (Food & Dining)
