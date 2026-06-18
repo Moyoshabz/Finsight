@@ -54,6 +54,9 @@ Upload a CSV of bank transactions and FinSight will:
 
 ## Quick Start
 git clone https://github.com/Moyoshabz/Finsight.git
+
 cd Finsight
+
 pip install -r requirements.txt
+
 streamlit run app.py
