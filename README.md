@@ -66,16 +66,15 @@ flowchart TD
 
 ---
 
+## Quick Start
+- git clone https://github.com/Moyoshabz/Finsight.git
+- cd Finsight
+- pip install -r requirements.txt
+
+---
+
 ## References
 - Devlin et al. (2019) — BERT: Pre-training of Deep Bidirectional Transformers
 - Sanh et al. (2019) — DistilBERT: Smaller, Faster, Cheaper
 - Sun et al. (2019) — How to Fine-Tune BERT for Text Classification
 
-## Quick Start
-git clone https://github.com/Moyoshabz/Finsight.git
-
-cd Finsight
-
-pip install -r requirements.txt
-
-streamlit run app.py
